@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:retinopathy/screens/camera_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -166,7 +167,10 @@ class HomeScreen extends StatelessWidget {
                 child: ElevatedButton.icon(
                   onPressed: () {
                     // TODO: navigate to camera screen
-                    // Navigator.push(context, MaterialPageRoute(builder: (_) => const CameraScreen()));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const CameraScreen()),
+                    );
                   },
                   icon: const Icon(Icons.camera_alt_outlined, size: 22),
                   label: const Text(
