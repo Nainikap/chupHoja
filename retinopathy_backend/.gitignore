@@ -1,0 +1,47 @@
+git # Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Model files (too large for git — store in Google Drive)
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.h5
+
+# Uploaded images (patient data — never commit)
+uploads/
+temp/
+*.jpg
+*.jpeg
+*.png
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# uvicorn / fastapi
+.uvicorn*
