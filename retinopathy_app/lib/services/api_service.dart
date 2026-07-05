@@ -6,7 +6,7 @@ class ApiService {
   static const String _baseUrl = 'http://10.0.2.2:8000';
   //this is for emulator right now change it to render's link
 
-  static Future<Map<String, dynamic>> predict(File, imageFile) async {
+  static Future<Map<String, dynamic>> predict(File imageFile) async {
     final uri = Uri.parse('$_baseUrl/predict');
 
     final request = http.MultipartRequest('POST', uri)
